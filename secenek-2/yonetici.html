@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Yönetici paneli, CityPulse AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="k-yonetici">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-ara" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol><symbol id="i-harita" viewBox="0 0 24 24"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol><symbol id="i-akis" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 15l4.5-4 3.5 3 3-2.5 5 4"/><circle cx="15.5" cy="8.5" r="1.3"/></symbol><symbol id="i-puan" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z"/></symbol><symbol id="i-tel" viewBox="0 0 24 24"><path d="M6 3.5h3l1.5 4.5-2 1.5a12 12 0 006 6l1.5-2 4.5 1.5v3a2 2 0 01-2.2 2A16.5 16.5 0 014 5.7a2 2 0 012-2.2z"/></symbol><symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.2-4.2A8 8 0 1112 20a8 8 0 01-3.8-1z"/><path d="M9 8.5c-.6.8-.3 2.4 1.3 4 1.6 1.700 3.300 2.100 4.200 1.400l.5-1-1.800-1-.8.6c-.8-.3-1.500-1-1.900-1.900l.6-.8-1-1.800z"/></symbol><symbol id="i-yol" viewBox="0 0 24 24"><path d="M12 21s-6.500-5.700-6.500-11a6.500 6.500 0 0113 0c0 5.300-6.500 11-6.500 11z"/><circle cx="12" cy="10" r="2.300"/></symbol><symbol id="i-paylas" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.500"/><circle cx="17.500" cy="6" r="2.500"/><circle cx="17.500" cy="18" r="2.500"/><path d="M8.300 11l7-3.800M8.300 13l7 3.800"/></symbol><symbol id="i-kalp" viewBox="0 0 24 24"><path d="M12 20s-7.500-4.600-8.500-9.500C2.900 7.300 5 5 7.500 5c1.900 0 3.500 1 4.500 2.700C13 6 14.600 5 16.500 5 19 5 21.100 7.300 20.500 10.500 19.500 15.400 12 20 12 20z"/></symbol><symbol id="i-yorum" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4 3.500V16H4z"/></symbol><symbol id="i-kaydet" viewBox="0 0 24 24"><path d="M6 3.500h12V21l-6-4-6 4z"/></symbol><symbol id="i-bayrak" viewBox="0 0 24 24"><path d="M6 21V4h11.500l-2.500 4 2.500 4H6"/></symbol><symbol id="i-arti" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-eksi" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol><symbol id="i-kapat" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol><symbol id="i-tamam" viewBox="0 0 24 24"><path d="M4.500 12.500l5 5 10-11"/></symbol><symbol id="i-kamera" viewBox="0 0 24 24"><path d="M4 7.500h3.500L9.500 5h5l2 2.500H20v11.500H4z"/><circle cx="12" cy="13" r="3.500"/></symbol><symbol id="i-zil" viewBox="0 0 24 24"><path d="M6 16.500V11a6 6 0 0112 0v5.500l1.500 2h-15z"/><path d="M10 21h4"/></symbol><symbol id="i-oynat" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z" fill="currentColor"/></symbol><symbol id="i-karekod" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2.500v2.500H14zM19 14h1v1M14 19h1v1M18 18h2v2h-2z"/></symbol><symbol id="i-takvim" viewBox="0 0 24 24"><rect x="4" y="5.500" width="16" height="15" rx="1.500"/><path d="M4 10h16M8.500 3v4M15.500 3v4"/></symbol><symbol id="i-insta" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.500"/><circle cx="12" cy="12" r="3.700"/><circle cx="16.800" cy="7.200" r=".8" fill="currentColor"/></symbol><symbol id="i-kilit" viewBox="0 0 24 24"><rect x="5" y="10.500" width="14" height="10" rx="1.500"/><path d="M8 10.500V8a4 4 0 018 0v2.500"/></symbol><symbol id="i-asagi" viewBox="0 0 24 24"><path d="M6 9.500l6 6 6-6"/></symbol><symbol id="i-duzenle" viewBox="0 0 24 24"><path d="M4 20l1-4.500L16 4.500l3.500 3.500L8.500 19z"/></symbol><symbol id="i-yenile" viewBox="0 0 24 24"><path d="M19.500 12a7.500 7.500 0 11-2.300-5.400"/><path d="M20 3.500V8h-4.500"/></symbol><symbol id="i-profil" viewBox="0 0 24 24"><circle cx="12" cy="8.500" r="4"/><path d="M4.500 20.500c1-4 4-6 7.500-6s6.500 2 7.500 6"/></symbol><symbol id="i-ekran" viewBox="0 0 24 24"><rect x="4" y="4" width="6.500" height="6.500"/><rect x="13.500" y="4" width="6.500" height="6.500"/><rect x="4" y="13.500" width="6.500" height="6.500"/><rect x="13.500" y="13.500" width="6.500" height="6.500"/></symbol></defs></svg>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<header class="ust ust-koyu"><a class="logo" href="index.html" aria-label="CityPulse AI ana sayfa"><svg class="logo-i" viewBox="0 0 32 40" aria-hidden="true"><path d="M16 0C7.200 0 0 7 0 15.800 0 27 16 40 16 40s16-13 16-24.200C32 7 24.800 0 16 0z" fill="currentColor"/><path d="M8.500 25V10.500h3.300v3h2.600v-3h3.200v3h2.600v-3h3.300V25h-5.500v-4.800a2 2 0 00-4 0V25z" fill="var(--logo-ic,#fff)"/></svg><span>CityPulse <b>AI</b></span></a><span class="ust-ad">Yönetici</span><nav class="ust-nav" aria-label="Panel menüsü"><a href="#finans">Finans</a><a href="#isletmeler">İşletmeler</a><a href="#uretim">Üretim</a><a href="#kuyruk">Şikâyet ve doğrulama</a></nav></header>
+<main id="icerik" class="yn">
+<div class="yn-bas"><h1>Kasım 2026 özeti</h1><span class="ikincil">Pilot 3. ay, Diyarbakır</span></div>
+<dl class="kpi"><div><dt>Kullanıcı</dt><dd>18.420</dd></div><div><dt>Aylık aktif</dt><dd>7.360</dd></div><div><dt>Kayıtlı işletme</dt><dd>86</dd></div><div><dt>Ücretli abone</dt><dd>63</dd></div><div><dt>Açık şikâyet</dt><dd id="sik-k">7</dd></div></dl>
+
+<section id="finans" class="yn-fin" aria-label="Finans">
+<div class="fin-a"><h2>Bu ay kalan</h2><p class="buyuk">133.330 TL</p>
+<div class="yigin" role="img" aria-label="Gelir 157.870 TL: kalan 133.330, yapay zekâ gideri 17.640, sunucu ve diğer 6.900 TL">
+<i class="y-kalan" style="flex:133330" title="Kalan 133.330 TL"></i><i class="y-yz" style="flex:17640" title="Yapay zekâ gideri 17.640 TL"></i><i class="y-sun" style="flex:6900" title="Sunucu ve diğer 6.900 TL"></i></div>
+<table class="fin-t"><tr><td>Aylık abonelik geliri</td><td>157.870 TL</td></tr><tr><td><i class="y-yz"></i>Yapay zekâ gideri</td><td>-17.640 TL</td></tr><tr><td><i class="y-sun"></i>Sunucu ve diğer gider</td><td>-6.900 TL</td></tr><tr class="t-top"><td><i class="y-kalan"></i>Kalan</td><td>133.330 TL</td></tr></table></div>
+<div class="fin-b"><h2>Aylık gelir</h2>
+<div class="sutun" role="img" aria-label="Eylül 41.200, Ekim 96.530, Kasım 157.870 TL">
+<div><b>41.200 TL</b><i style="height:26%" title="Eylül 41.200 TL"></i><span>Eylül</span></div><div><b>96.530 TL</b><i style="height:61%" title="Ekim 96.530 TL"></i><span>Ekim</span></div><div><b>157.870 TL</b><i style="height:100%" title="Kasım 157.870 TL"></i><span>Kasım</span></div></div></div>
+<div class="fin-c"><h2>Abonelikler</h2>
+<table class="tablo"><thead><tr><th>Paket</th><th class="sag">Abone</th><th class="sag">Aylık</th><th class="sag">Gelir</th></tr></thead><tbody>
+<tr><td data-e="Paket">Başlangıç</td><td class="sag" data-e="Abone">31</td><td class="sag" data-e="Aylık">1.490 TL</td><td class="sag" data-e="Gelir">46.190 TL</td></tr>
+<tr><td data-e="Paket">İşletme</td><td class="sag" data-e="Abone">24</td><td class="sag" data-e="Aylık">2.990 TL</td><td class="sag" data-e="Gelir">71.760 TL</td></tr>
+<tr><td data-e="Paket">Pro</td><td class="sag" data-e="Abone">8</td><td class="sag" data-e="Aylık">4.990 TL</td><td class="sag" data-e="Gelir">39.920 TL</td></tr>
+<tr class="t-top"><td data-e="Paket">Toplam</td><td class="sag" data-e="Abone">63</td><td class="sag" data-e="Aylık"></td><td class="sag" data-e="Gelir">157.870 TL</td></tr>
+</tbody></table><p class="ikincil kucuk">Paket fiyatları örnek fiyattır.</p></div>
+</section>
+
+<div class="yn-iki">
+<section id="isletmeler" aria-labelledby="ip-b"><div class="blok-b"><h2 id="ip-b">İşletme performansı, son 30 gün</h2></div>
+<table class="tablo"><thead><tr><th>İşletme</th><th>Paket</th><th class="sag">Erişim</th><th class="sag">WhatsApp</th><th class="sag">Kota</th></tr></thead><tbody>
+<tr><td data-e="İşletme">Meşhur Ciğerci Mahmut Usta</td><td data-e="Paket">Pro</td><td class="sag" data-e="Erişim">18.940</td><td class="sag" data-e="WhatsApp">612</td><td class="sag" data-e="Kota">71 / 90</td></tr>
+<tr><td data-e="İşletme">Suriçi Kahvaltı Evi</td><td data-e="Paket">Pro</td><td class="sag" data-e="Erişim">15.210</td><td class="sag" data-e="WhatsApp">534</td><td class="sag" data-e="Kota">64 / 90</td></tr>
+<tr><td data-e="İşletme">Diyarbakır Sofrası</td><td data-e="Paket">İşletme</td><td class="sag" data-e="Erişim">12.480</td><td class="sag" data-e="WhatsApp">428</td><td class="sag" data-e="Kota">38 / 60</td></tr>
+<tr><td data-e="İşletme">Kadayıfçı Şeyhmus</td><td data-e="Paket">İşletme</td><td class="sag" data-e="Erişim">9.760</td><td class="sag" data-e="WhatsApp">301</td><td class="sag" data-e="Kota">42 / 60</td></tr>
+<tr><td data-e="İşletme">Kayapınar Burger Lab</td><td data-e="Paket">Başlangıç</td><td class="sag" data-e="Erişim">4.320</td><td class="sag" data-e="WhatsApp">96</td><td class="sag" data-e="Kota">19 / 30</td></tr>
+</tbody></table></section>
+<aside class="yn-yan">
+<section id="uretim" aria-labelledby="ur-b"><h2 id="ur-b">Bu ay üretim</h2><table class="kazan"><tr><td>Üretilen görsel</td><td>3.412</td></tr><tr><td>Üretilen video</td><td>846</td></tr><tr><td>Otomatik paylaşım</td><td>3.968</td></tr></table></section>
+<section aria-labelledby="ar-b"><h2 id="ar-b">En çok arananlar</h2><ol class="aranan"><li>kahvaltı</li><li>ciğer</li><li>açık kafe</li><li>aile mekânı</li><li>kampanya</li></ol></section>
+</aside>
+</div>
+
+<div id="kuyruk" class="yn-iki yn-esit">
+<section aria-labelledby="sk-b"><div class="blok-b"><h2 id="sk-b">Şikâyet kuyruğu</h2><span class="ikincil"><span id="sik-n">7</span> açık</span></div>
+<ul id="sik-l" class="kuyruk">
+<li><div><h3>Yanıltıcı mekân etiketi</h3><p class="ikincil">Elif D. paylaşımı, Sur Baharat</p></div><div class="ky-d"><button class="dugme dugme-cizgi" data-k="Paylaşım kaldırıldı.">Kaldır</button><button class="dugme dugme-cizgi" data-k="Şikâyet reddedildi.">Reddet</button></div></li>
+<li><div><h3>Hakaret içeren yorum</h3><p class="ikincil">Suriçi Kahvaltı Evi sayfası</p></div><div class="ky-d"><button class="dugme dugme-cizgi" data-k="Yorum kaldırıldı.">Kaldır</button><button class="dugme dugme-cizgi" data-k="Şikâyet reddedildi.">Reddet</button></div></li>
+<li><div><h3>Spam paylaşım</h3><p class="ikincil">Akış, Hasan Paşa Hanı etiketi</p></div><div class="ky-d"><button class="dugme dugme-cizgi" data-k="Paylaşım kaldırıldı.">Kaldır</button><button class="dugme dugme-cizgi" data-k="Şikâyet reddedildi.">Reddet</button></div></li>
+<li><div><h3>Uygunsuz fotoğraf</h3><p class="ikincil">Akış, Dağkapı etiketi</p></div><div class="ky-d"><button class="dugme dugme-cizgi" data-k="Fotoğraf kaldırıldı.">Kaldır</button><button class="dugme dugme-cizgi" data-k="Şikâyet reddedildi.">Reddet</button></div></li>
+<li><div><h3>Yanlış çalışma saati</h3><p class="ikincil">Hevsel Bahçe Kafe sayfası</p></div><div class="ky-d"><button class="dugme dugme-cizgi" data-k="İşletmeye bildirim gitti.">İşletmeye bildir</button><button class="dugme dugme-cizgi" data-k="Şikâyet reddedildi.">Reddet</button></div></li>
+<li><div><h3>Kampanya uygulanmadı</h3><p class="ikincil">Kayapınar Burger Lab</p></div><div class="ky-d"><button class="dugme dugme-cizgi" data-k="İşletmeye bildirim gitti.">İşletmeye bildir</button><button class="dugme dugme-cizgi" data-k="Şikâyet reddedildi.">Reddet</button></div></li>
+<li><div><h3>Sahte yorum şüphesi</h3><p class="ikincil">Elif Kuaför sayfası</p></div><div class="ky-d"><button class="dugme dugme-cizgi" data-k="Yorum kaldırıldı.">Kaldır</button><button class="dugme dugme-cizgi" data-k="Şikâyet reddedildi.">Reddet</button></div></li>
+</ul></section>
+<section aria-labelledby="dg-b"><div class="blok-b"><h2 id="dg-b">İşletme doğrulama</h2></div>
+<ul id="dog-l" class="kuyruk">
+<li><div><h3>Dicle Konağı Butik Otel</h3><p class="ikincil">Vergi levhası yüklendi, Suriçi</p></div><div class="ky-d"><button class="dugme" data-k="İşletme doğrulandı.">Doğrula</button><button class="dugme dugme-cizgi" data-k="Belge istendi.">Belge iste</button></div></li>
+<li><div><h3>Sur Baharat</h3><p class="ikincil">Vergi levhası yüklendi, Suriçi</p></div><div class="ky-d"><button class="dugme" data-k="İşletme doğrulandı.">Doğrula</button><button class="dugme dugme-cizgi" data-k="Belge istendi.">Belge iste</button></div></li>
+<li><div><h3>Elif Kuaför</h3><p class="ikincil">Belge eksik, Bağlar</p></div><div class="ky-d"><button class="dugme" data-k="İşletme doğrulandı.">Doğrula</button><button class="dugme dugme-cizgi" data-k="Belge istendi.">Belge iste</button></div></li>
+</ul></section>
+</div>
+</main>
+
+<footer class="alt"><p class="alt-slogan">Şehrini Keşfet, Hayatını Kolaylaştır!</p><p>Yoğunluk çizgileri ve işletmeler örnek veridir. Tasarım önizlemesi, Webizmo</p></footer>
+<div class="ekranlar"><button type="button" class="ekranlar-d" aria-expanded="false" aria-controls="ekran-l"><svg class="i" aria-hidden="true"><use href="#i-ekran"/></svg> Ekranlar</button><div id="ekran-l" class="ekranlar-l" hidden><ul><li><a href="index.html">Keşfet</a></li><li><a href="harita.html">Harita ve akıllı arama</a></li><li><a href="isletme.html">İşletme sayfası</a></li><li><a href="akis.html">Sosyal akış</a></li><li><a href="sadakat.html">Puan ve Şehir Hazinesi</a></li><li><a href="panel.html">İşletme yapay zekâ paneli</a></li><li><a href="abonelik.html">Kayıt ve abonelik</a></li><li><a href="yonetici.html" aria-current=page>Yönetici paneli</a></li><li><a href="mobil.html">Mobil ekranlar</a></li></ul><a class="ekranlar-don" href="../index.html">Tüm seçeneklere dön</a></div></div>
+<div class="tost" role="status" aria-live="polite"></div>
+<script>
+const $=(s,k=document)=>k.querySelector(s),$$=(s,k=document)=>[...k.querySelectorAll(s)];
+const SAAT0=9,SIMDI=15;
+const para=n=>n.toLocaleString('tr-TR')+' TL';
+function tost(m){const t=$('.tost');t.textContent=m;t.classList.add('acik');clearTimeout(tost.z);tost.z=setTimeout(()=>t.classList.remove('acik'),3200)}
+function durum(v){return v===0?'kapalı':v<35?'sakin':v<70?'hareketli':'çok yoğun'}
+function nabizCiz(el,saat=SIMDI){
+  const d=el.dataset.nabiz.split(',').map(Number),W=120,H=30,n=d.length-1,k=saat-SAAT0;
+  const px=i=>i/n*W,py=v=>H-2-v/100*(H-5);
+  const yol=(a,b)=>d.slice(a,b+1).map((v,i)=>(i?'L':'M')+px(a+i).toFixed(1)+' '+py(v).toFixed(1)).join('');
+  const tepe=d.indexOf(Math.max(...d))+SAAT0;
+  el.setAttribute('role','img');el.setAttribute('aria-label','Saatlik yoğunluk, örnek veri. En yoğun saat '+tepe+':00');
+  el.innerHTML='<div class="nabiz-c"><svg viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" aria-hidden="true"><path class="n-gelecek" d="'+yol(k,n)+'"/><path class="n-gecmis" d="'+yol(0,k)+'"/></svg><i class="n-nokta" style="left:'+px(k)/W*100+'%;top:'+py(d[k])/H*100+'%"></i><span class="n-ipucu" hidden></span></div><div class="n-saat"><span>09</span><span>12</span><span>15</span><span>18</span><span>21</span></div>';
+  const c=$('.nabiz-c',el),ip=$('.n-ipucu',el);
+  c.onpointermove=e=>{const r=c.getBoundingClientRect(),i=Math.max(0,Math.min(n,Math.round((e.clientX-r.left)/r.width*n)));ip.hidden=false;ip.textContent=(i+SAAT0)+':00 '+durum(d[i]);ip.style.left=Math.min(70,Math.max(0,i/n*100))+'%'};
+  c.onpointerleave=()=>{ip.hidden=true};
+}
+function acKapa(d,l){d.addEventListener('click',e=>{e.stopPropagation();const a=l.hidden;l.hidden=!a;d.setAttribute('aria-expanded',a)});document.addEventListener('click',e=>{if(!l.hidden&&!l.contains(e.target)){l.hidden=true;d.setAttribute('aria-expanded',false)}});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!l.hidden){l.hidden=true;d.setAttribute('aria-expanded',false);d.focus()}})}
+acKapa($('.ekranlar-d'),$('#ekran-l'));
+if($('.sehir-d'))acKapa($('.sehir-d'),$('#sehir-l'));
+$$('[data-nabiz]').forEach(e=>nabizCiz(e));
+$$('dialog').forEach(d=>{d.addEventListener('click',e=>{if(e.target===d)d.close()});$$('[data-kapat]',d).forEach(b=>b.onclick=()=>d.close())});
+let sik=7;
+$$('#sik-l [data-k]').forEach(b=>b.onclick=()=>{const li=b.closest('li');li.remove();sik--;$('#sik-n').textContent=sik;$('#sik-k').textContent=sik;tost(b.dataset.k);if(!sik)$('#sik-l').innerHTML='<li class="bos">Açık şikâyet kalmadı.</li>'});
+$$('#dog-l [data-k]').forEach(b=>b.onclick=()=>{const li=b.closest('li');tost(b.dataset.k);li.remove();if(!$('#dog-l li'))$('#dog-l').innerHTML='<li class="bos">Doğrulama bekleyen işletme yok.</li>'});
+
+</script>
+</body>
+</html>

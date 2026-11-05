@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Harita, CityPulse AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="k-vatandas">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-ara" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol><symbol id="i-harita" viewBox="0 0 24 24"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol><symbol id="i-akis" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 15l4.5-4 3.5 3 3-2.5 5 4"/><circle cx="15.5" cy="8.5" r="1.3"/></symbol><symbol id="i-puan" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z"/></symbol><symbol id="i-tel" viewBox="0 0 24 24"><path d="M6 3.5h3l1.5 4.5-2 1.5a12 12 0 006 6l1.5-2 4.5 1.5v3a2 2 0 01-2.2 2A16.5 16.5 0 014 5.7a2 2 0 012-2.2z"/></symbol><symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.2-4.2A8 8 0 1112 20a8 8 0 01-3.8-1z"/><path d="M9 8.5c-.6.8-.3 2.4 1.3 4 1.6 1.700 3.300 2.100 4.200 1.400l.5-1-1.800-1-.8.6c-.8-.3-1.500-1-1.900-1.900l.6-.8-1-1.800z"/></symbol><symbol id="i-yol" viewBox="0 0 24 24"><path d="M12 21s-6.500-5.700-6.500-11a6.500 6.500 0 0113 0c0 5.300-6.500 11-6.500 11z"/><circle cx="12" cy="10" r="2.300"/></symbol><symbol id="i-paylas" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.500"/><circle cx="17.500" cy="6" r="2.500"/><circle cx="17.500" cy="18" r="2.500"/><path d="M8.300 11l7-3.800M8.300 13l7 3.800"/></symbol><symbol id="i-kalp" viewBox="0 0 24 24"><path d="M12 20s-7.500-4.600-8.500-9.500C2.900 7.300 5 5 7.500 5c1.900 0 3.500 1 4.500 2.700C13 6 14.600 5 16.500 5 19 5 21.100 7.300 20.500 10.500 19.500 15.400 12 20 12 20z"/></symbol><symbol id="i-yorum" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4 3.500V16H4z"/></symbol><symbol id="i-kaydet" viewBox="0 0 24 24"><path d="M6 3.500h12V21l-6-4-6 4z"/></symbol><symbol id="i-bayrak" viewBox="0 0 24 24"><path d="M6 21V4h11.500l-2.500 4 2.500 4H6"/></symbol><symbol id="i-arti" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-eksi" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol><symbol id="i-kapat" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol><symbol id="i-tamam" viewBox="0 0 24 24"><path d="M4.500 12.500l5 5 10-11"/></symbol><symbol id="i-kamera" viewBox="0 0 24 24"><path d="M4 7.500h3.500L9.500 5h5l2 2.500H20v11.500H4z"/><circle cx="12" cy="13" r="3.500"/></symbol><symbol id="i-zil" viewBox="0 0 24 24"><path d="M6 16.500V11a6 6 0 0112 0v5.500l1.500 2h-15z"/><path d="M10 21h4"/></symbol><symbol id="i-oynat" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z" fill="currentColor"/></symbol><symbol id="i-karekod" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2.500v2.500H14zM19 14h1v1M14 19h1v1M18 18h2v2h-2z"/></symbol><symbol id="i-takvim" viewBox="0 0 24 24"><rect x="4" y="5.500" width="16" height="15" rx="1.500"/><path d="M4 10h16M8.500 3v4M15.500 3v4"/></symbol><symbol id="i-insta" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.500"/><circle cx="12" cy="12" r="3.700"/><circle cx="16.800" cy="7.200" r=".8" fill="currentColor"/></symbol><symbol id="i-kilit" viewBox="0 0 24 24"><rect x="5" y="10.500" width="14" height="10" rx="1.500"/><path d="M8 10.500V8a4 4 0 018 0v2.500"/></symbol><symbol id="i-asagi" viewBox="0 0 24 24"><path d="M6 9.500l6 6 6-6"/></symbol><symbol id="i-duzenle" viewBox="0 0 24 24"><path d="M4 20l1-4.500L16 4.500l3.500 3.500L8.500 19z"/></symbol><symbol id="i-yenile" viewBox="0 0 24 24"><path d="M19.500 12a7.500 7.500 0 11-2.300-5.400"/><path d="M20 3.500V8h-4.500"/></symbol><symbol id="i-profil" viewBox="0 0 24 24"><circle cx="12" cy="8.500" r="4"/><path d="M4.500 20.500c1-4 4-6 7.500-6s6.500 2 7.500 6"/></symbol><symbol id="i-ekran" viewBox="0 0 24 24"><rect x="4" y="4" width="6.500" height="6.500"/><rect x="13.500" y="4" width="6.500" height="6.500"/><rect x="4" y="13.500" width="6.500" height="6.500"/><rect x="13.500" y="13.500" width="6.500" height="6.500"/></symbol></defs></svg>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<header class="ust"><a class="logo" href="index.html" aria-label="CityPulse AI ana sayfa"><svg class="logo-i" viewBox="0 0 32 40" aria-hidden="true"><path d="M16 0C7.200 0 0 7 0 15.800 0 27 16 40 16 40s16-13 16-24.200C32 7 24.800 0 16 0z" fill="currentColor"/><path d="M8.500 25V10.500h3.300v3h2.600v-3h3.200v3h2.600v-3h3.300V25h-5.500v-4.800a2 2 0 00-4 0V25z" fill="var(--logo-ic,#fff)"/></svg><span>CityPulse <b>AI</b></span></a><div class="sehir"><button type="button" class="sehir-d" aria-expanded="false" aria-controls="sehir-l">Diyarbakır <svg class="i" aria-hidden="true"><use href="#i-asagi"/></svg></button>
+<ul id="sehir-l" hidden><li class="secili"><svg class="i" aria-hidden="true"><use href="#i-tamam"/></svg> Diyarbakır</li><li>Mardin <small>yakında</small></li><li>Şanlıurfa <small>yakında</small></li></ul></div><nav class="ust-nav" aria-label="Ana menü"><a href="index.html">Keşfet</a><a href="harita.html" aria-current=page>Harita</a><a href="akis.html">Akış</a><a href="sadakat.html">Puanlarım</a></nav><a class="dugme ust-panel" href="panel.html">İşletme paneli</a></header>
+<main id="icerik" class="hp">
+<div class="hp-ust">
+<form class="komut" id="komut"><svg class="chip" viewBox="0 0 40 40" aria-hidden="true"><path d="M13 3v6M20 3v6M27 3v6M13 31v6M20 31v6M27 31v6M3 13h6M3 20h6M3 27h6M31 13h6M31 20h6M31 27h6" stroke="currentColor" stroke-width="2.500" fill="none"/><rect x="9" y="9" width="22" height="22" rx="2.500" fill="none" stroke="currentColor" stroke-width="2.500"/><text x="20" y="25" text-anchor="middle" fill="currentColor">YZ</text></svg><label class="gizli" for="q">Ne arıyorsun?</label><input id="q" autocomplete="off" placeholder="Diyarbakır'da bugün ne keşfetmek istersin?"><button class="dugme" type="submit">Ara</button></form>
+<ul class="ornekler" aria-label="Örnek sorular">
+<li><button type="button" class="ornek">Yakınımda nerede kahvaltı yapabilirim?</button></li><li><button type="button" class="ornek">Ailemle gidebileceğim güzel yerler nerede?</button></li><li><button type="button" class="ornek">Bugün hangi işletmelerde indirim var?</button></li><li><button type="button" class="ornek">Yakınımda açık olan kafeler hangileri?</button></li>
+</ul>
+</div>
+<div class="hp-gov">
+<section class="hp-sol" aria-label="Sonuçlar">
+<div class="hp-baslik"><h1>Diyarbakır, şimdi</h1><span id="adet" class="ikincil"></span></div>
+<p id="anladim" class="anladim" hidden></p>
+<div class="filtre"><button type="button" data-f="acik" aria-pressed="false">Şu an açık</button><button type="button" data-f="kamp" aria-pressed="false">Kampanyalı</button><button type="button" data-f="sakin" aria-pressed="false">Sakin olanlar</button>
+<label class="gizli" for="katsec">Kategori</label><select id="katsec"><option>Tümü</option><option>Restoran</option><option>Kafe</option><option>Kahvaltı</option><option>Otel</option><option>Gezilecek yerler</option><option>Alışveriş</option><option>Etkinlik</option><option>Hizmetler</option></select></div>
+<div id="liste" class="liste liste-dar"></div>
+</section>
+<div class="hp-sag">
+<div class="harita"><div class="harita-ic"><svg class="harita-svg" viewBox="0 0 1000 720" role="img" aria-label="Diyarbakır haritası: Sur, İçkale, Dicle, Dağkapı, Yenişehir, Ofis, Kayapınar, Bağlar">
+<defs><clipPath id="surkirp"><path d="M505 165L585 170L655 176L715 196L745 250L752 320L735 385L690 430L620 450L560 436L500 470L430 498L350 478L305 440L292 370L300 300L335 240L400 205L450 190Z"/></clipPath></defs>
+<rect width="1000" height="720" fill="#E9EDF2"/>
+<path d="M-20 -14 L100 -22 L220 -17 L340 13 L460 -6 L580 16 L700 23 L820 12 L940 27 L1060 50 M-20 59 L100 38 L220 48 L340 65 L460 44 L580 75 L700 84 L820 77 L940 89 L1060 111 M-20 121 L100 104 L220 124 L340 137 L460 122 L580 125 L700 160 L820 128 L940 158 L1060 175 M-20 172 L100 148 L220 168 L340 204 L460 177 L580 188 L700 224 L820 191 L940 204 L1060 234 M-20 243 L100 226 L220 235 L340 250 L460 228 L580 254 L700 277 L820 253 L940 282 L1060 295 M-20 295 L100 281 L220 300 L340 318 L460 305 L580 314 L700 336 L820 316 L940 329 L1060 362 M-20 370 L100 337 L220 371 L340 374 L460 360 L580 379 L700 394 L820 384 L940 394 L1060 420 M-20 429 L100 396 L220 419 L340 440 L460 416 L580 452 L700 459 L820 448 L940 459 L1060 488 M-20 489 L100 473 L220 478 L340 516 L460 481 L580 513 L700 525 L820 498 L940 520 L1060 537 M-20 547 L100 533 L220 558 L340 576 L460 555 L580 558 L700 589 L820 564 L940 578 L1060 614 M-20 605 L100 589 L220 607 L340 634 L460 614 L580 630 L700 642 L820 624 L940 640 L1060 667 M-20 667 L100 650 L220 671 L340 698 L460 680 L580 697 L700 713 L820 697 L940 708 L1060 721 M-20 745 L100 712 L220 735 L340 746 L460 732 L580 762 L700 780 L820 742 L940 770 L1060 800 M3 -20 L-45 90 L-35 200 L-27 310 L-73 420 L-60 530 L-61 640 L-94 750 M78 -20 L24 90 L43 200 L53 310 L0 420 L21 530 L12 640 L-22 750 M147 -20 L97 90 L118 200 L114 310 L70 420 L87 530 L98 640 L61 750 M213 -20 L185 90 L182 200 L188 310 L154 420 L157 530 L163 640 L122 750 M292 -20 L254 90 L253 200 L263 310 L220 420 L233 530 L247 640 L198 750 M362 -20 L318 90 L328 200 L343 310 L308 420 L299 530 L311 640 L275 750 M448 -20 L409 90 L401 200 L423 310 L367 420 L382 530 L387 640 L351 750 M514 -20 L484 90 L491 200 L481 310 L452 420 L462 530 L462 640 L418 750 M597 -20 L558 90 L547 200 L568 310 L530 420 L527 530 L530 640 L491 750 M662 -20 L629 90 L635 200 L642 310 L598 420 L602 530 L607 640 L564 750 M733 -20 L706 90 L695 200 L710 310 L676 420 L679 530 L681 640 L639 750 M807 -20 L780 90 L784 200 L777 310 L737 420 L743 530 L766 640 L713 750 M878 -20 L852 90 L850 200 L868 310 L817 420 L825 530 L841 640 L790 750 M958 -20 L925 90 L926 200 L935 310 L895 420 L906 530 L913 640 L869 750 M1041 -20 L1002 90 L1007 200 L1000 310 L975 420 L981 530 L979 640 L941 750" fill="none" stroke="#fff" stroke-width="4"/>
+<g fill="#CFE3C8"><path d="M60 60L170 40L190 120L90 140Z"/><path d="M340 40L430 30L440 95L350 105Z"/><path d="M60 470L160 450L190 530L90 560Z"/><path d="M880 420L960 400L985 500L900 520Z"/><path d="M300 610L380 590L395 660L320 680Z"/><path d="M700 440L760 405L806 432L770 495L690 545L622 566L606 470Z"/><path d="M820 640L930 600L960 690L850 712Z"/></g>
+<path d="M905 -30C880 80 850 130 842 200S856 360 818 450S724 562 640 592S480 640 425 760" fill="none" stroke="#B5D3FA" stroke-width="42" stroke-linecap="round"/>
+<g fill="none" stroke="#fff" stroke-linecap="round"><path stroke-width="10" d="M-10 118C200 138 350 160 505 165M520 -20L505 165M-10 402L292 370M752 320L1010 280M300 450L120 740M300 -20C240 200 226 400 340 740"/><path stroke-width="8" d="M560 436L575 640L590 740"/></g>
+<rect x="292" y="165" width="462" height="335" fill="#F3F5F8" clip-path="url(#surkirp)"/>
+<g clip-path="url(#surkirp)"><path d="M290 187 L335 175 L385 185 L421 177 L470 185 L524 184 L569 181 L607 186 L648 179 L695 186 L751 176 M290 200 L336 213 L393 198 L434 200 L470 206 L530 198 L565 205 L606 198 L659 212 L719 205 M290 233 L325 226 L382 224 L428 227 L487 232 L535 228 L580 236 L625 238 L685 230 L743 228 M290 262 L337 258 L394 263 L449 258 L485 251 L543 259 L594 263 L643 263 L680 252 L732 247 M290 288 L347 277 L406 272 L447 278 L496 274 L539 276 L587 287 L626 272 L680 277 L728 288 M290 311 L333 302 L370 313 L408 309 L457 301 L503 309 L542 300 L583 304 L618 299 L661 307 L719 300 M290 329 L327 331 L368 332 L412 337 L456 327 L506 327 L554 324 L590 329 L646 323 L682 335 L742 331 M290 363 L350 348 L408 358 L467 356 L519 361 L561 360 L611 357 L661 358 L718 361 M290 380 L332 385 L369 386 L408 379 L456 386 L500 386 L543 377 L592 375 L652 372 L704 388 L747 372 M290 407 L348 409 L405 408 L452 397 L491 409 L534 398 L582 410 L623 413 L674 413 L720 408 L756 409 M290 424 L328 435 L388 431 L446 428 L489 431 L548 432 L600 432 L659 435 L718 436 L753 426 M290 450 L338 454 L388 461 L440 453 L479 451 L520 459 L566 457 L606 460 L658 457 L697 462 L744 457 M290 477 L341 483 L381 483 L419 480 L475 478 L520 484 L562 482 L605 475 L653 485 L707 478 L755 482 M292 170 L304 210 L300 246 L293 295 L300 347 L302 381 L294 412 L307 457 L301 493 M333 170 L327 220 L324 252 L332 290 L337 328 L325 373 L321 425 L339 474 M361 170 L353 215 L369 257 L363 309 L359 350 L353 389 L352 430 L367 477 M397 170 L399 201 L387 248 L391 290 L385 341 L396 386 L393 428 L394 474 M424 170 L423 210 L424 256 L422 305 L411 338 L421 379 L422 430 L413 480 M444 170 L452 207 L455 246 L459 277 L448 309 L447 341 L452 374 L457 417 L446 450 L454 493 M477 170 L479 211 L479 261 L484 313 L474 359 L476 403 L474 441 L478 480 M515 170 L508 204 L517 237 L501 286 L511 336 L503 379 L506 429 L506 465 M549 170 L545 221 L546 255 L537 287 L537 331 L531 377 L537 429 L542 466 M574 170 L574 215 L577 265 L576 303 L574 336 L566 377 L578 413 L572 446 L568 491 M606 170 L604 215 L600 265 L596 313 L603 347 L591 395 L608 428 L601 469 M634 170 L626 201 L627 238 L639 272 L630 305 L626 352 L624 392 L623 441 L639 482 M652 170 L657 207 L664 259 L668 307 L668 355 L653 392 L665 425 L659 461 M696 170 L698 208 L682 251 L691 291 L693 341 L687 374 L699 416 L694 451 L690 494 M726 170 L720 209 L720 239 L721 289 L721 332 L716 377 L713 416 L718 456 L712 498 M741 170 L741 206 L742 252 L749 292 L744 335 L754 379 L741 419 L757 470" fill="none" stroke="#DCE1E9" stroke-width="2.500"/><path d="M505 165L500 470M292 360L752 320" fill="none" stroke="#fff" stroke-width="9"/></g>
+<path d="M648 178L715 196L745 250L748 292L672 288L650 240Z" fill="#E4E8EF"/>
+<g fill="none" stroke="#5A6578" stroke-linejoin="round"><path d="M648 178L715 196L745 250L748 292L672 288L650 240Z" stroke-width="3"/><path d="M648 178L715 196L745 250L748 292L672 288L650 240Z" stroke-width="8" stroke-dasharray="5 7"/><path d="M505 165L585 170L655 176L715 196L745 250L752 320L735 385L690 430L620 450L560 436L500 470L430 498L350 478L305 440L292 370L300 300L335 240L400 205L450 190Z" stroke-width="4"/><path d="M505 165L585 170L655 176L715 196L745 250L752 320L735 385L690 430L620 450L560 436L500 470L430 498L350 478L305 440L292 370L300 300L335 240L400 205L450 190Z" stroke-width="11" stroke-dasharray="6 8"/></g>
+<path d="M545 612L602 590" stroke="#5A6578" stroke-width="7" stroke-dasharray="7 4" fill="none"/>
+<g class="h-yazi"><text x="500" y="348" class="h-b">Sur</text><text x="697" y="245" class="h-k">İçkale</text><text x="505" y="146">Dağkapı</text><text x="520" y="530" class="h-k">Mardin Kapı</text><text x="250" y="346" class="h-k">Urfa Kapı</text><text x="798" y="300" class="h-k">Yeni Kapı</text><text x="250" y="62">Yenişehir</text><text x="170" y="240">Ofis</text><text x="110" y="442">Kayapınar</text><text x="230" y="640">Bağlar</text><text x="842" y="520" class="h-su">Dicle</text><text x="694" y="535" class="h-k">Hevsel</text></g>
+</svg><div class="pinler"></div></div>
+<div class="zum"><button type="button" data-zum="1" aria-label="Yakınlaştır"><svg class="i" aria-hidden="true"><use href="#i-arti"/></svg></button><button type="button" data-zum="-1" aria-label="Uzaklaştır"><svg class="i" aria-hidden="true"><use href="#i-eksi"/></svg></button></div>
+<aside id="kart" class="kart" hidden aria-label="Seçili mekân"></aside>
+</div>
+<div class="saat-k"><label for="saat">Saat kaydır: <b id="saatyaz">Şimdi, 15:00</b></label><input id="saat" type="range" min="9" max="21" step="1" value="15"><ul class="lejant"><li><i class="p-sakin"></i>Sakin</li><li><i class="p-hareketli"></i>Hareketli</li><li><i class="p-okyoun"></i>Çok yoğun</li><li><i class="p-kapal"></i>Kapalı</li></ul></div>
+</div></div>
+</div>
+</main>
+
+<footer class="alt"><p class="alt-slogan">Şehrini Keşfet, Hayatını Kolaylaştır!</p><p>Yoğunluk çizgileri ve işletmeler örnek veridir. Tasarım önizlemesi, Webizmo</p></footer><nav class="sekme" aria-label="Alt menü"><a href="index.html"><svg class="i" aria-hidden="true"><use href="#i-ara"/></svg><span>Keşfet</span></a><a href="harita.html" aria-current=page><svg class="i" aria-hidden="true"><use href="#i-harita"/></svg><span>Harita</span></a><a href="akis.html"><svg class="i" aria-hidden="true"><use href="#i-akis"/></svg><span>Akış</span></a><a href="sadakat.html"><svg class="i" aria-hidden="true"><use href="#i-puan"/></svg><span>Puanlar</span></a></nav>
+<div class="ekranlar"><button type="button" class="ekranlar-d" aria-expanded="false" aria-controls="ekran-l"><svg class="i" aria-hidden="true"><use href="#i-ekran"/></svg> Ekranlar</button><div id="ekran-l" class="ekranlar-l" hidden><ul><li><a href="index.html">Keşfet</a></li><li><a href="harita.html" aria-current=page>Harita ve akıllı arama</a></li><li><a href="isletme.html">İşletme sayfası</a></li><li><a href="akis.html">Sosyal akış</a></li><li><a href="sadakat.html">Puan ve Şehir Hazinesi</a></li><li><a href="panel.html">İşletme yapay zekâ paneli</a></li><li><a href="abonelik.html">Kayıt ve abonelik</a></li><li><a href="yonetici.html">Yönetici paneli</a></li><li><a href="mobil.html">Mobil ekranlar</a></li></ul><a class="ekranlar-don" href="../index.html">Tüm seçeneklere dön</a></div></div>
+<div class="tost" role="status" aria-live="polite"></div>
+<script>
+const $=(s,k=document)=>k.querySelector(s),$$=(s,k=document)=>[...k.querySelectorAll(s)];
+const SAAT0=9,SIMDI=15;
+const para=n=>n.toLocaleString('tr-TR')+' TL';
+function tost(m){const t=$('.tost');t.textContent=m;t.classList.add('acik');clearTimeout(tost.z);tost.z=setTimeout(()=>t.classList.remove('acik'),3200)}
+function durum(v){return v===0?'kapalı':v<35?'sakin':v<70?'hareketli':'çok yoğun'}
+function nabizCiz(el,saat=SIMDI){
+  const d=el.dataset.nabiz.split(',').map(Number),W=120,H=30,n=d.length-1,k=saat-SAAT0;
+  const px=i=>i/n*W,py=v=>H-2-v/100*(H-5);
+  const yol=(a,b)=>d.slice(a,b+1).map((v,i)=>(i?'L':'M')+px(a+i).toFixed(1)+' '+py(v).toFixed(1)).join('');
+  const tepe=d.indexOf(Math.max(...d))+SAAT0;
+  el.setAttribute('role','img');el.setAttribute('aria-label','Saatlik yoğunluk, örnek veri. En yoğun saat '+tepe+':00');
+  el.innerHTML='<div class="nabiz-c"><svg viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="none" aria-hidden="true"><path class="n-gelecek" d="'+yol(k,n)+'"/><path class="n-gecmis" d="'+yol(0,k)+'"/></svg><i class="n-nokta" style="left:'+px(k)/W*100+'%;top:'+py(d[k])/H*100+'%"></i><span class="n-ipucu" hidden></span></div><div class="n-saat"><span>09</span><span>12</span><span>15</span><span>18</span><span>21</span></div>';
+  const c=$('.nabiz-c',el),ip=$('.n-ipucu',el);
+  c.onpointermove=e=>{const r=c.getBoundingClientRect(),i=Math.max(0,Math.min(n,Math.round((e.clientX-r.left)/r.width*n)));ip.hidden=false;ip.textContent=(i+SAAT0)+':00 '+durum(d[i]);ip.style.left=Math.min(70,Math.max(0,i/n*100))+'%'};
+  c.onpointerleave=()=>{ip.hidden=true};
+}
+function acKapa(d,l){d.addEventListener('click',e=>{e.stopPropagation();const a=l.hidden;l.hidden=!a;d.setAttribute('aria-expanded',a)});document.addEventListener('click',e=>{if(!l.hidden&&!l.contains(e.target)){l.hidden=true;d.setAttribute('aria-expanded',false)}});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!l.hidden){l.hidden=true;d.setAttribute('aria-expanded',false);d.focus()}})}
+acKapa($('.ekranlar-d'),$('#ekran-l'));
+if($('.sehir-d'))acKapa($('.sehir-d'),$('#sehir-l'));
+$$('[data-nabiz]').forEach(e=>nabizCiz(e));
+$$('dialog').forEach(d=>{d.addEventListener('click',e=>{if(e.target===d)d.close()});$$('[data-kapat]',d).forEach(b=>b.onclick=()=>d.close())});
+const M=[
+{id:'kahvalti',ad:'Suriçi Kahvaltı Evi',kat:'Kahvaltı',alt:'Kahvaltı',semt:'Suriçi',p:'4,8',yr:'2.148',km:0.4,img:'kahvalti',x:462,y:318,aile:1,kamp:'Hafta içi 10:00\'a kadar %15',d:[85,92,84,66,52,38,26,18,0,0,0,0,0]},
+{id:'tarihi',ad:'Tarihi Kahve Evi',kat:'Kafe',alt:'Kafe',semt:'Suriçi',p:'4,7',yr:'986',km:0.5,img:'menengic',x:575,y:392,aile:1,d:[12,18,24,34,40,46,52,64,74,70,56,38,20]},
+{id:'ciger',ad:'Meşhur Ciğerci Mahmut Usta',kat:'Restoran',alt:'Restoran',semt:'Dağkapı',p:'4,7',yr:'3.410',km:0.9,img:'ciger-sis',x:530,y:222,kamp:'İki kişilik ciğer menüsü 840 TL',d:[8,14,30,62,84,70,48,40,52,78,92,74,40]},
+{id:'sofra',ad:'Diyarbakır Sofrası',kat:'Restoran',alt:'Restoran',semt:'Ofis',p:'4,8',yr:'1.862',km:2.4,img:'kaburga-dolmasi',x:190,y:190,aile:1,kamp:'Bugüne özel kaburga dolması %20',d:[0,6,18,44,68,58,42,38,52,76,88,70,36]},
+{id:'kadayif',ad:'Kadayıfçı Şeyhmus',kat:'Restoran',alt:'Tatlı',semt:'Dağkapı',p:'4,9',yr:'1.205',km:1.1,img:'burma-kadayif',x:430,y:145,aile:1,d:[10,16,22,30,36,42,58,66,72,76,62,40,18]},
+{id:'hevselk',ad:'Hevsel Bahçe Kafe',kat:'Kafe',alt:'Kafe',semt:'Hevsel yolu',p:'4,6',yr:'640',km:1.6,img:'kafe-avlu',x:748,y:462,aile:1,d:[6,12,20,28,34,38,30,44,66,78,72,50,24]},
+{id:'otel',ad:'Dicle Konağı Butik Otel',kat:'Otel',alt:'Otel',semt:'Suriçi',p:'4,8',yr:'334',km:0.8,img:'otel-oda',x:380,y:400,aile:1,not:'Gecelik 3.400 TL\'den başlar',d:[30,28,24,20,20,22,26,34,42,46,44,40,36]},
+{id:'baharat',ad:'Sur Baharat',kat:'Alışveriş',alt:'Alışveriş',semt:'Suriçi',p:'4,7',yr:'410',km:0.7,img:'baharat-carsi',x:640,y:340,d:[14,26,40,54,62,70,74,66,48,30,0,0,0]},
+{id:'burger',ad:'Kayapınar Burger Lab',kat:'Restoran',alt:'Restoran',semt:'Kayapınar',p:'4,4',yr:'512',km:6.2,img:'sokak-sur',x:95,y:370,kamp:'Günün menüsü 330 TL',d:[0,0,0,0,0,0,0,0,46,62,80,84,66]},
+{id:'elif',ad:'Elif Kuaför',kat:'Hizmetler',alt:'Hizmetler',semt:'Bağlar',p:'4,6',yr:'288',km:4.1,img:'kuafor',x:215,y:590,d:[20,36,48,52,44,40,46,58,62,50,24,0,0]},
+{id:'han',ad:'Hasan Paşa Hanı',kat:'Gezilecek yerler',alt:'Tarihi han',semt:'Suriçi',p:'4,8',yr:'5.120',km:0.5,img:'han-avlu',x:528,y:286,aile:1,d:[22,34,46,58,64,70,72,74,68,60,44,30,16]},
+{id:'kopru',ad:'On Gözlü Köprü',kat:'Gezilecek yerler',alt:'Tarihi köprü',semt:'Dicle kıyısı',p:'4,9',yr:'4.260',km:3.2,img:'on-gozlu',x:640,y:640,aile:1,d:[8,10,14,18,20,24,30,44,72,86,60,34,18]},
+{id:'hevsel',ad:'Hevsel Bahçeleri',kat:'Gezilecek yerler',alt:'Tarihi bahçeler',semt:'Sur altı',p:'4,8',yr:'2.780',km:1.4,img:'hevsel',x:640,y:505,aile:1,d:[10,16,22,26,28,30,36,48,62,58,30,12,6]},
+{id:'yuruyus',ad:'Cumartesi Sur Yürüyüşü',kat:'Etkinlik',alt:'Etkinlik',semt:'Dağkapı',p:'4,7',yr:'164',km:1.0,img:'reel-sokak',x:600,y:140,aile:1,not:'Cumartesi 09:30, buluşma Dağkapı',d:[64,88,70,30,10,6,6,6,6,6,6,6,6]},
+{id:'dengbej',ad:'Dengbêj Akşamı',kat:'Etkinlik',alt:'Etkinlik',semt:'Suriçi',p:'4,9',yr:'212',km:0.5,img:'sur-gece',x:430,y:240,not:'Cuma 20:00, Dengbêj Evi avlusu',d:[6,6,6,6,6,6,6,6,10,20,52,90,66]},
+];
+const Yer=id=>M.find(m=>m.id===id);
+let SAAT=SIMDI,seciliId=null;
+const yogun=(m,s=SAAT)=>m.d[s-SAAT0];
+function etiket(m,s=SAAT){const v=durum(yogun(m,s)),b=s===SIMDI?'Şu an ':'Saat '+s+':00, ';return b+v}
+function satir(m,i){
+  return `<article class="satir${yogun(m)===0?' satir-kapali':''}" data-id="${m.id}">
+  <a class="satir-foto" href="isletme.html" tabindex="-1" aria-hidden="true"><img src="../assets/img/${m.img}.jpg" alt="" loading="lazy"></a>
+  <div class="satir-b"><h3><span class="no">${i+1}</span><a href="isletme.html">${m.ad}</a></h3>
+  <p class="ikincil">${m.alt}, ${m.semt}</p>
+  <p class="satir-m"><svg class="i yildiz" aria-hidden="true"><use href="#i-puan"/></svg>${m.p} (${m.yr}), ${String(m.km).replace('.',',')} km</p>
+  <p class="etiket-d d-${durum(yogun(m)).replace(/\s|ç|ğ|ı/g,'')}">${etiket(m)}</p>
+  ${m.kamp?`<p class="kamp"><span class="kamp-t">Kampanya</span> ${m.kamp}</p>`:m.not?`<p class="ikincil">${m.not}</p>`:''}</div>
+  <div class="satir-n"><p class="n-baslik">Saatlik yoğunluk</p><div class="nabiz" data-nabiz="${m.d.join(',')}"></div></div></article>`}
+function pinler(liste){
+  const k=$('.pinler');if(!k)return;
+  k.innerHTML=liste.map((m,i)=>`<button type="button" class="pin p-${durum(yogun(m)).replace(/\s|ç|ğ|ı/g,'')}${m.id===seciliId?' secili':''}" data-id="${m.id}" style="left:${m.x/10}%;top:${m.y/7.2}%" aria-label="${i+1}. ${m.ad}, ${etiket(m)}"><span>${i+1}</span></button>`).join('')+'<span class="sen" style="left:49%;top:51%" title="Buradasın"></span>';
+}
+function listele(liste,bos){
+  const l=$('#liste');
+  l.innerHTML=liste.length?liste.map(satir).join(''):bos;
+  $$('[data-nabiz]',l).forEach(e=>nabizCiz(e,SAAT));pinler(liste);
+}
+function haritaZum(){
+  const h=$('.harita-ic');let z=1;if(!h)return;
+  const uygula=()=>{h.style.setProperty('--z',z)};
+  $$('[data-zum]').forEach(b=>b.onclick=()=>{z=Math.min(2.4,Math.max(1,z+ +b.dataset.zum*.4));uygula()});
+}
+haritaZum();
+const F={acik:false,kamp:false,sakin:false,kat:'Tümü'};let niyet=[],soru='';
+const tr=s=>s.toLocaleLowerCase('tr');
+const KURAL=[
+[/kahvaltı/,'Kahvaltı',m=>m.kat==='Kahvaltı'],
+[/kafe|kahve|menengiç/,'Kafe',m=>m.kat==='Kafe'],
+[/ciğer|kebap|şiş/,'Ciğer',m=>m.id==='ciger'],
+[/yemek|restoran|lokanta|akşam/,'Restoran',m=>m.kat==='Restoran'],
+[/tatlı|kadayıf/,'Tatlı',m=>m.alt==='Tatlı'],
+[/otel|konakla/,'Otel',m=>m.kat==='Otel'],
+[/gezilecek|gez|tarih|görülecek/,'Gezilecek yer',m=>m.kat==='Gezilecek yerler'],
+[/baharat|alışveriş/,'Alışveriş',m=>m.kat==='Alışveriş'],
+[/kuaför|berber/,'Hizmet',m=>m.kat==='Hizmetler'],
+[/etkinlik|konser|yürüyüş/,'Etkinlik',m=>m.kat==='Etkinlik'],
+[/aile|çocuk/,'Aileyle uygun',m=>m.aile],
+[/indirim|kampanya/,'Kampanyalı',m=>m.kamp],
+[/açık/,'Şu an açık',m=>yogun(m,SIMDI)>0],
+[/sakin|kalabalık olmayan/,'Sakin',m=>yogun(m)>0&&yogun(m)<35],
+[/yakın/,'Yakınında',m=>m.km<=1.6],
+];
+function hesap(){
+  const q=tr(soru);niyet=[];
+  const kurallar=KURAL.filter(k=>k[0].test(q));
+  kurallar.forEach(k=>niyet.push(k[1]));
+  let l=M.filter(m=>kurallar.every(k=>k[2](m)));
+  if(F.kat!=='Tümü')l=l.filter(m=>m.kat===F.kat);
+  if(F.acik)l=l.filter(m=>yogun(m)>0);
+  if(F.kamp)l=l.filter(m=>m.kamp);
+  if(F.sakin)l=l.filter(m=>yogun(m)>0&&yogun(m)<35);
+  l.sort((a,b)=>a.km-b.km);
+  const a=$('#anladim');
+  if(soru&&!kurallar.length){l=[];a.hidden=false;a.innerHTML='<span class="yz" title="Yapay zekâ üretti">YZ</span> <span>Bu soruyu mekânlarla eşleştiremedim. "Kahvaltı", "açık kafe" veya "indirim" gibi yaz.</span>'}
+  else if(soru){a.hidden=false;a.innerHTML='<span class="yz" title="Yapay zekâ üretti">YZ</span> <span>Anladığım: </span>'+niyet.map(n=>`<b>${n}</b>`).join('')}
+  else a.hidden=true;
+  $('#adet').textContent=l.length+' mekân';
+  listele(l,'<p class="bos">Eşleşen mekân yok. Filtreleri kaldır ya da aşağıdaki örnek sorulardan birini seç.</p>');
+  if(seciliId&&!l.find(m=>m.id===seciliId))kartKapat();
+}
+function kartAc(id){
+  seciliId=id;const m=Yer(id),k=$('#kart');k.hidden=false;
+  k.innerHTML=`<button type="button" class="kart-x" aria-label="Kartı kapat"><svg class="i" aria-hidden="true"><use href="#i-kapat"/></svg></button><img src="../assets/img/${m.img}.jpg" alt=""><div class="kart-b"><h2>${m.ad}</h2><p class="ikincil">${m.alt}, ${m.semt}, ${String(m.km).replace('.',',')} km</p><p class="satir-m"><svg class="i yildiz" aria-hidden="true"><use href="#i-puan"/></svg>${m.p} (${m.yr} yorum)</p><p class="etiket-d">${etiket(m)}</p>${m.kamp?`<p class="kamp"><span class="kamp-t">Kampanya</span> ${m.kamp}</p>`:''}<div class="nabiz" data-nabiz="${m.d.join(',')}"></div><div class="kart-d"><a class="dugme" href="isletme.html">Mekânı aç</a><button type="button" class="dugme dugme-cizgi" id="yol">Yol tarifi al</button></div></div>`;
+  nabizCiz($('.nabiz',k),SAAT);
+  $('.kart-x',k).onclick=kartKapat;
+  $('#yol',k).onclick=()=>tost('Yol tarifi telefonun harita uygulamasında açılır.');
+  $$('.pin').forEach(p=>p.classList.toggle('secili',p.dataset.id===id));
+  $$('.satir').forEach(s=>s.classList.toggle('vurgu',s.dataset.id===id));
+}
+function kartKapat(){seciliId=null;$('#kart').hidden=true;$$('.pin').forEach(p=>p.classList.remove('secili'));$$('.satir').forEach(s=>s.classList.remove('vurgu'))}
+document.addEventListener('click',e=>{const p=e.target.closest('.pin');if(p)return kartAc(p.dataset.id);const s=e.target.closest('.satir');if(s&&!e.target.closest('a'))kartAc(s.dataset.id)});
+$('#komut').onsubmit=e=>{e.preventDefault();soru=$('#q').value.trim();hesap()};
+$$('.ornek').forEach(b=>b.onclick=()=>{$('#q').value=b.textContent;soru=b.textContent;hesap()});
+$$('[data-f]').forEach(b=>b.onclick=()=>{const k=b.dataset.f;F[k]=!F[k];b.setAttribute('aria-pressed',F[k]);hesap()});
+$('#katsec').onchange=e=>{F.kat=e.target.value;hesap()};
+$('#saat').oninput=e=>{SAAT=+e.target.value;$('#saatyaz').textContent=SAAT===SIMDI?'Şimdi, 15:00':SAAT+':00';hesap();if(seciliId)kartAc(seciliId)};
+const u=new URLSearchParams(location.search);
+if(u.get('q')){$('#q').value=u.get('q');soru=u.get('q')}
+hesap();
+if(u.get('m'))kartAc(u.get('m'));
+
+</script>
+</body>
+</html>
